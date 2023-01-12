@@ -1,6 +1,7 @@
 :root {
     --blue: #0A1920;
     --orange: #FB6E38;
+    --dark-orange:#e24304;
     --white: #FFFFFF;
     --black: #000000;
     --gray: #616469;
@@ -61,6 +62,10 @@
     color: var(--orange);
 }
 
+.header div {
+    z-index: 2;
+}
+
 .header div button {
     font-size: 16px;
     font-weight: 300;
@@ -78,7 +83,7 @@
 }
 
 .header div button:hover:nth-child(2) {
-    background-color: var(--orange);
+    background-color: var(--dark-orange);
     color: var(--white);
     transition: .5s ease-in-out;
 }
@@ -87,11 +92,15 @@
 
 /* ======================= MAIN */
 
+.main__article {
+    position: relative;
+}
+
 .main__container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 32px;
+    padding: 80px 32px;
     color: var(--white);
     background-color: var(--blue);
 }
@@ -99,6 +108,7 @@
 .main__container img {
     max-width: 600px;
     width: 95%;
+    z-index: 2;
 }
 
 .main__content {
@@ -112,6 +122,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 32px;
+    margin-top: 48px;
 }
 
 .main__content h1 {
@@ -134,28 +145,36 @@
     cursor: pointer;
 }
 
-.main__content button:hover{
-    background-color: var(--white);
-    color: var(--orange);
+.main__content button:hover {
+    background-color: var(--dark-orange);
     transition: .5s ease-in-out;
 }
 
-.main__content section div h3{
+.main__content section div h3 {
     font-size: 16px;
     color: var(--orange);
     text-transform: uppercase;
     margin-bottom: 12px;
 }
 
-.main__content section div i{
+.main__content section div i {
     color: var(--white);
+    margin-right: 12px;
 }
 
-.main__content section div h4{
+.main__content section div h4 {
     font-size: 14px;
     font-weight: 400;
     color: var(--light-gray);
-    margin-left: 3rem;
+    margin-left: 2.375rem;
 }
 
-
+.square {
+    position: absolute;
+    width: 550px;
+    height: 560px;
+    background-color: var(--orange);
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
