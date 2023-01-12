@@ -81,3 +81,32 @@
     color: var(--white);
     transition: .5s ease-in-out;
 }
+
+/* BODY */
+
+/* ======================= MAIN */
+
+.main__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 32px;
+}
+
+.main__container img {
+    max-width: 500px;
+    width: 95%;
+}
+
+.main__content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main__content section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
