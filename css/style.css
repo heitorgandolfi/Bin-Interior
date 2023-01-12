@@ -1,0 +1,81 @@
+:root {
+    --blue: #0A1920;
+    --orange: #FB6E38;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #616469;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--blue);
+    padding: 32px;
+    color: var(--white);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    font-weight: 300;
+    padding: 0 16px;
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    position: relative;
+}
+
+.menu a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--orange);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+    margin-left: 18%;
+}
+
+.menu a:hover::after {
+    width: 70%;
+}
+
+.menu a span {
+    color: var(--orange);
+}
+
+.header div button {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 20px 36px;
+    color: var(--white);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header div button:nth-child(2) {
+    font-weight: 600;
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+.header div button:hover:nth-child(2) {
+    background-color: var(--orange);
+    color: var(--white);
+    transition: .5s ease-in-out;
+}
