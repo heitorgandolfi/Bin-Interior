@@ -4,6 +4,7 @@
     --white: #FFFFFF;
     --black: #000000;
     --gray: #616469;
+    --light-gray: #ffffffe1;
 }
 
 * {
@@ -49,7 +50,7 @@
     bottom: 0;
     left: 0;
     transition: .5s ease-in-out;
-    margin-left: 18%;
+    margin-left: 15%;
 }
 
 .menu a:hover::after {
@@ -91,22 +92,70 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 32px;
+    color: var(--white);
+    background-color: var(--blue);
 }
 
 .main__container img {
-    max-width: 500px;
+    max-width: 600px;
     width: 95%;
 }
 
-.main__content{
+.main__content {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.main__content section{
+.main__content section {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 32px;
 }
+
+.main__content h1 {
+    font-size: 72px;
+}
+
+.main__content p {
+    font-weight: 400;
+    color: var(--light-gray);
+}
+
+.main__content button {
+    max-width: 170px;
+    height: 59px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--orange);
+    border: none;
+    cursor: pointer;
+}
+
+.main__content button:hover{
+    background-color: var(--white);
+    color: var(--orange);
+    transition: .5s ease-in-out;
+}
+
+.main__content section div h3{
+    font-size: 16px;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.main__content section div i{
+    color: var(--white);
+}
+
+.main__content section div h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light-gray);
+    margin-left: 3rem;
+}
+
+
