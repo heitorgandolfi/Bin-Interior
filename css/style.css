@@ -198,18 +198,18 @@
     width: 95%;
 }
 
-/* ======================= BEST SERVICES */
+/* ======================= BESTS SERVICES */
 
-.best_services {
+.bests_services {
     background-color: var(--ice);
     padding: 80px 32px;
 }
 
-.best_services_container:not(:last-child) {
+.bests_services_container:not(:last-child) {
     border-right: 3px solid var(--orange);
 }
 
-.best_services section:first-of-type {
+.bests_services section:first-of-type {
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
@@ -219,23 +219,23 @@
     margin-left: 4px;
 }
 
-.best_services section:first-of-type h3 {
+.bests_services section:first-of-type h3 {
     text-transform: uppercase;
     color: var(--orange);
     margin-bottom: 28px;
 }
 
-.best_services section:first-of-type h2 {
+.bests_services section:first-of-type h2 {
     font-size: 48px;
 }
 
-.best_services section:first-of-type p {
+.bests_services section:first-of-type p {
     font-size: 18px;
     font-weight: 400;
     color: var(--gray);
 }
 
-.best_services section:not(:first-child) {
+.bests_services section:not(:first-child) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,25 +243,25 @@
     /* gap: 120px; */
 }
 
-.best_services_container {
+.bests_services_container {
     max-width: 320px;
     padding: 16px;
     width: 95%;
     display: flex;
 }
 
-.best_services_container i {
+.bests_services_container i {
     font-size: 32px;
     margin-right: 12px;
     color: var(--orange);
 }
 
-.best_services_container div h3 {
+.bests_services_container div h3 {
     font-size: 24px;
     margin-bottom: 24px;
 }
 
-.best_services_container div p {
+.bests_services_container div p {
     font-size: 17px;
     font-weight: 400;
     color: var(--gray);
