@@ -1,7 +1,7 @@
 :root {
     --blue: #0A1920;
     --orange: #FB6E38;
-    --dark-orange:#e24304;
+    --dark-orange: #e24304;
     --white: #FFFFFF;
     --black: #000000;
     --gray: #616469;
@@ -31,6 +31,7 @@
     align-items: center;
     list-style: none;
     gap: 20px;
+    z-index: 2;
 }
 
 .menu a {
@@ -90,7 +91,7 @@
 
 /* BODY */
 
-/* ======================= MAIN */
+/* ======================= MAIN ARTICLE */
 
 .main__article {
     position: relative;
@@ -171,10 +172,27 @@
 
 .square {
     position: absolute;
-    width: 550px;
+    max-width: 550px;
+    width: 95%;
     height: 560px;
     background-color: var(--orange);
     top: 0;
     right: 0;
     z-index: 1;
+}
+
+/* ======================= PARTNERS */
+
+.partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    padding: 72px 32px;
+}
+
+.partners img {
+    max-width: 200px;
+    width: 95%;
 }
