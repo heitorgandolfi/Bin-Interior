@@ -200,27 +200,69 @@
 
 /* ======================= BEST SERVICES */
 
-.best_services section {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.best_services {
     background-color: var(--ice);
     padding: 80px 32px;
 }
 
-.best_services section h3 {
+.best_services_container:not(:last-child) {
+    border-right: 3px solid var(--orange);
+}
+
+.best_services section:first-of-type {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 88px;
+    padding-left: 4px;
+    margin-left: 4px;
+}
+
+.best_services section:first-of-type h3 {
     text-transform: uppercase;
     color: var(--orange);
     margin-bottom: 28px;
 }
 
-.best_services section h2 {
+.best_services section:first-of-type h2 {
     font-size: 48px;
 }
 
-.best_services section p {
+.best_services section:first-of-type p {
     font-size: 18px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.best_services section:not(:first-child) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 120px; */
+}
+
+.best_services_container {
+    max-width: 320px;
+    padding: 16px;
+    width: 95%;
+    display: flex;
+}
+
+.best_services_container i {
+    font-size: 32px;
+    margin-right: 12px;
+    color: var(--orange);
+}
+
+.best_services_container div h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.best_services_container div p {
+    font-size: 17px;
     font-weight: 400;
     color: var(--gray);
 }
