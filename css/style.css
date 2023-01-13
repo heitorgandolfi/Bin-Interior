@@ -6,6 +6,7 @@
     --black: #000000;
     --gray: #616469;
     --light-gray: #ffffffe1;
+    --ice: #F4F4F4;
 }
 
 * {
@@ -189,10 +190,37 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 120px;
-    padding: 72px 32px;
+    padding: 120px 32px;
 }
 
 .partners img {
     max-width: 200px;
     width: 95%;
+}
+
+/* ======================= BEST SERVICES */
+
+.best_services section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: var(--ice);
+    padding: 80px 32px;
+}
+
+.best_services section h3 {
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 28px;
+}
+
+.best_services section h2 {
+    font-size: 48px;
+}
+
+.best_services section p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gray);
 }
