@@ -378,4 +378,37 @@
     width: 35%;
 } */
 
-/* ======================= PROJECTS */
+/* ======================= SERVICES */
+
+.services {
+    padding: 80px 0px;
+}
+
+.services section {
+    display: flex;
+}
+
+.services__div {
+    text-align: center;
+}
+
+.services__div h3 {
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 28px;
+}
+
+.services__div h2 {
+    font-size: 48px;
+    margin-bottom: 28px;
+}
+
+.services__div p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gray);
+    margin: 0 auto;
+    margin-bottom: 36px;
+    max-width: 700px;
+    width: 95%;
+}
