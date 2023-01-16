@@ -616,13 +616,100 @@ h2 {
 
 body::-webkit-scrollbar {
     width: 16px;
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background: var(--ice)
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: var(--navy);
     border: 1px solid var(--ice);
-  }
+}
+
+/* ======================= FOOTER */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    background-color: var(--navy);
+    padding: 80px 0px;
+}
+
+.footer form p {
+    max-width: 300px;
+    color: var(--ice);
+    font-weight: 300;
+    margin: 18px 0 40px 0;
+}
+
+.footer form input[type=email] {
+    font-size: 18px;
+    padding: 16px 32px;
+    width: 200px;
+    border: none;
+}
+
+.footer form input[type=email]:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.footer form button {
+    font-size: 18px;
+    border: none;
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+.footer section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer section div {
+    padding: 32px;
+}
+
+.footer section div:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer section div h3 {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.footer section div a {
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.footer section div a:hover {
+    text-decoration: underline;
+}
+
+.footer section div i {
+    color: var(--white);
+    font-size: 24px;
+    margin-right: 32px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.footer section div i:hover {
+    color: var(--orange);
+    transition: .5s ease-in-out;
+}

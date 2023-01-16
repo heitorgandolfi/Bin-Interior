@@ -1,10 +1,8 @@
 // Seletores
 
 const links = Array.from(document.querySelectorAll("a"));
-
-const testimonialParag = document.querySelector(".testimonial__parag");
 const testimonialDiv = Array.from(document.querySelectorAll(".testimonial__div"));
-console.log(testimonialDiv)
+const testimonialParag = document.querySelector(".testimonial__parag");
 
 // Funções
 
