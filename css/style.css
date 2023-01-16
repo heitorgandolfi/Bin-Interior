@@ -630,35 +630,38 @@ body::-webkit-scrollbar-thumb {
 /* ======================= FOOTER */
 
 .footer {
+    background-color: var(--navy);
+    padding: 80px 0 30px 0;
+}
+
+.footer-article {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 120px;
-    background-color: var(--navy);
-    padding: 80px 0px;
 }
 
-.footer form p {
+.footer-article form p {
     max-width: 300px;
     color: var(--ice);
     font-weight: 300;
     margin: 18px 0 40px 0;
 }
 
-.footer form input[type=email] {
+.footer-article form input[type=email] {
     font-size: 18px;
     padding: 16px 32px;
     width: 200px;
     border: none;
 }
 
-.footer form input[type=email]:focus {
+.footer-article form input[type=email]:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
 
-.footer form button {
+.footer-article form button {
     font-size: 18px;
     border: none;
     color: var(--white);
@@ -667,41 +670,41 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-.footer section {
+.footer-article section {
     display: flex;
     flex-wrap: wrap;
 }
 
-.footer section div {
+.footer-article section div {
     padding: 32px;
 }
 
-.footer section div:not(:last-child) {
+.footer-article section div:not(:last-child) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.footer section div h3 {
+.footer-article section div h3 {
     color: var(--white);
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 28px;
 }
 
-.footer section div a {
+.footer-article section div a {
     text-decoration: none;
     font-weight: 300;
     color: var(--white);
     margin-bottom: 20px;
 }
 
-.footer section div a:hover {
+.footer-article section div a:hover {
     text-decoration: underline;
 }
 
-.footer section div i {
+.footer-article section div i {
     color: var(--white);
     font-size: 24px;
     margin-right: 32px;
@@ -709,7 +712,23 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-.footer section div i:hover {
+.footer-article section div i:hover {
     color: var(--orange);
     transition: .5s ease-in-out;
+}
+
+.copyright__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    width: 61%;
+    margin: 80px 0 32px 0;
+
+}
+
+.footer span {
+    color: var(--light-gray);
 }
