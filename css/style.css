@@ -573,6 +573,10 @@ h2 {
     background-color: var(--white);
 }
 
+.our__blog section div img {
+    width: 100%;
+}
+
 .our__blog section div h5 {
     font-size: 16px;
     font-weight: 400;
