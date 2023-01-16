@@ -613,3 +613,16 @@ h2 {
     background-color: var(--dark-orange);
     transition: .5s ease-in-out;
 }
+
+body::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--ice)
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--navy);
+    border: 1px solid var(--ice);
+  }
