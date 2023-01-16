@@ -17,7 +17,7 @@ testimonialDiv.map((div, index) =>
             testimonialParag.innerHTML = `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
             Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet`
         } else if (index === 1) {
-            testimonialParag.innerHTML = `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+            testimonialParag.innerHTML = `Mollit amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.`
         } else {
             testimonialParag.innerHTML = `Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
