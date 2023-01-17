@@ -780,6 +780,7 @@ h2 {
 }
 
 .footer-article form p {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
     max-width: 300px;
     color: var(--ice);
     font-weight: 300;
@@ -868,4 +869,28 @@ hr {
 
 .footer span {
     color: var(--light-gray);
+    text-align: center;
+}
+
+@media screen and (max-width: 1165px) {
+
+    .footer-article {
+        gap: 40px;
+    }
+
+    .footer-article form {
+        text-align: center;
+    }
+
+    .footer-article form p {
+        margin: 18px 40px 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    .footer-article section{
+        justify-content: center;
+        align-items: center;
+    }
 }
