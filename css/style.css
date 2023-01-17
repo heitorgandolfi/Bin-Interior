@@ -18,7 +18,7 @@
 
 /* =========== Animation */
 
-@keyframes go-back {
+@keyframes show-up {
     0% {
         transform: translateX(100px);
     }
@@ -184,7 +184,7 @@ body::-webkit-scrollbar-thumb {
         top: 0;
         z-index: 100;
         padding: 2rem;
-        animation: go-back 1s;
+        animation: show-up 1s;
     }
 
     .menu.active .menu__nav a {
