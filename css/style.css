@@ -157,10 +157,12 @@
 }
 
 .main__content h1 {
-    font-size: 72px;
+    font-size: clamp(40px, 4.5vw, 78px);
 }
 
 .main__content p {
+    max-width: 400px;
+    width: 95%;
     font-weight: 400;
     color: var(--light-gray);
 }
@@ -236,6 +238,11 @@
     .main__content {
         align-items: center;
     }
+
+    .main__content p, h1 {
+        text-align: center;
+    }
+
 }
 
 
