@@ -16,6 +16,26 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Scrollbar */
+
+.our__blog section div button:hover {
+    background-color: var(--dark-orange);
+    transition: .5s ease-in-out;
+}
+
+body::-webkit-scrollbar {
+    width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--ice)
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--navy);
+    border: 1px solid var(--ice);
+}
+
 /* ======================= HEADER */
 
 .header {
@@ -237,13 +257,8 @@
 @media screen and (max-width: 1063px) {
     .main__content {
         align-items: center;
-    }
-
-    .main__content p,
-    h1 {
         text-align: center;
     }
-
 }
 
 
@@ -446,7 +461,7 @@
 }
 
 .projects nav h2 {
-    font-size: 48px;
+    font-size: clamp(1.75rem, 3vw, 5.25rem);
 }
 
 .projects nav ul {
@@ -457,7 +472,7 @@
 }
 
 .projects nav ul li {
-    font-size: 20px;
+    font-size: clamp(1rem, 2vw, 20px);
     font-weight: 600;
     list-style: none;
     text-transform: uppercase;
@@ -507,7 +522,7 @@
 }
 
 .services__div h2 {
-    font-size: 48px;
+    font-size: clamp(1.75rem, 3vw, 5.25rem);
     margin-bottom: 28px;
 }
 
@@ -519,6 +534,7 @@
     margin-bottom: 36px;
     max-width: 700px;
     width: 95%;
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 
 .services section {
@@ -576,7 +592,7 @@
 
 @media screen and (max-width: 599px) {
     .services__section__div {
-       justify-content: center;
+        justify-content: center;
     }
 }
 
@@ -608,6 +624,7 @@
     max-width: 700px;
     width: 95%;
     margin: 0 auto;
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 
 .testimonial section {
@@ -683,7 +700,7 @@ h2 {
 }
 
 .our__blog h2 {
-    font-size: 48px;
+    font-size: clamp(1.75rem, 3vw, 5.25rem);
     margin-bottom: 80px;
 }
 
@@ -698,7 +715,8 @@ h2 {
 .our__blog section div {
     display: flex;
     flex-direction: column;
-    width: 385px;
+    max-width: 385px;
+    width: 95%;
     padding: 16px;
     box-shadow: 0px 0px 28px -14px rgba(0, 0, 0, 0.75);
     background-color: var(--white);
@@ -740,23 +758,6 @@ h2 {
     align-self: flex-end;
 }
 
-.our__blog section div button:hover {
-    background-color: var(--dark-orange);
-    transition: .5s ease-in-out;
-}
-
-body::-webkit-scrollbar {
-    width: 16px;
-}
-
-body::-webkit-scrollbar-track {
-    background: var(--ice)
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: var(--navy);
-    border: 1px solid var(--ice);
-}
 
 /* ======================= FOOTER */
 
