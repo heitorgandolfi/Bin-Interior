@@ -263,6 +263,12 @@
     width: 95%;
 }
 
+@media screen and (max-width: 583px) {
+    .partners {
+        padding: 40px 32px;
+    }
+}
+
 /* ======================= BESTS SERVICES */
 
 .bests_services {
@@ -566,6 +572,18 @@
 .services__section__div__container div button:hover {
     background-color: var(--dark-orange);
     transition: .5s ease-in-out;
+}
+
+@media screen and (max-width: 599px) {
+    .services__section__div {
+       justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1211px) {
+    .services__section__div__container div {
+        text-align: center;
+    }
 }
 
 /* ======================= TESTIMONIAL */
