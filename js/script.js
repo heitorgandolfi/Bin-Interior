@@ -3,8 +3,9 @@
 const links = Array.from(document.querySelectorAll("a"));
 const testimonialDiv = Array.from(document.querySelectorAll(".testimonial__div"));
 const testimonialParag = document.querySelector(".testimonial__parag");
-const mobileBtn = document.querySelector(".btn__mobile");
 const menu = document.querySelector(".menu");
+const mobileBtn = document.querySelector(".btn__mobile");
+const closeBtn = document.querySelector(".close__menu");
 
 // Eventos
 
@@ -28,6 +29,7 @@ testimonialDiv.map((div, index) =>
     ))
 
 mobileBtn.addEventListener("click", toggleMenu);
+closeBtn.addEventListener("click", toggleMenu);
 
 // Funções
 
