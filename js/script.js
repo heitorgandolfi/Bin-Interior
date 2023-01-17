@@ -1,5 +1,3 @@
-// Seletores
-
 const links = Array.from(document.querySelectorAll("a"));
 const testimonialDiv = Array.from(document.querySelectorAll(".testimonial__div"));
 const testimonialParag = document.querySelector(".testimonial__parag");
@@ -9,8 +7,7 @@ const closeBtn = document.querySelector(".close__menu");
 
 // Eventos
 
-links.map((link) =>
-    link.addEventListener("click", (e) => { e.preventDefault() }));
+links.map((link) => link.addEventListener("click", prevDefault));
 
 testimonialDiv.map((div, index) =>
     div.addEventListener("click", () => {
@@ -32,6 +29,10 @@ mobileBtn.addEventListener("click", toggleMenu);
 closeBtn.addEventListener("click", toggleMenu);
 
 // Funções
+
+function prevDefault(e) {
+    e.preventDefault()
+}
 
 function toggleMenu() {
     menu.classList.toggle("active")
