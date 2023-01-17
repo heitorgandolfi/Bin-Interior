@@ -292,6 +292,7 @@
 
 .bests_services section:first-of-type h2 {
     font-size: clamp(1.75rem, 3vw, 5.25rem);
+    text-align: start;
 }
 
 .bests_services section:first-of-type p {
@@ -338,13 +339,14 @@
     .bests_services {
         text-align: center;
     }
-    
+
     .bests_services section:first-of-type {
         margin-bottom: 40px;
     }
 
     .bests_services section:first-of-type h2 {
         margin-bottom: 12px;
+        text-align: center;
     }
 }
 
@@ -361,13 +363,13 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 120px;
     padding: 80px 0px;
 }
 
 .about__us img {
     max-width: 610px;
     width: 95%;
+    margin: 0 40px 0 0;
 }
 
 .about__us div h3 {
@@ -377,12 +379,14 @@
 }
 
 .about__us div h2 {
-    font-size: 48px;
+    font-size: clamp(1.75rem, 3vw, 5.25rem);
     margin-bottom: 28px;
+    text-align: start;
 }
 
 .about__us div p {
-    font-size: 18px;
+    text-align: start;
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
     font-weight: 400;
     color: var(--gray);
     margin-bottom: 36px;
@@ -404,6 +408,17 @@
 .about__us div button:hover {
     background-color: var(--dark-orange);
     transition: .5s ease-in-out;
+}
+
+@media screen and (max-width: 1012px) {
+    .about__us {
+        text-align: center;
+    }
+
+    .about__us div h2,
+    .about__us div p {
+        text-align: center;
+    }
 }
 
 /* ======================= PROJECTS */
