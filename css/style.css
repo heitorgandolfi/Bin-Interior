@@ -419,6 +419,10 @@
     .about__us div p {
         text-align: center;
     }
+
+    .about__us img {
+        margin: 0 20px 0 20px;
+    }
 }
 
 /* ======================= PROJECTS */
