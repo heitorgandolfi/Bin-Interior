@@ -366,7 +366,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .bests_services section:first-of-type h2 {
-        margin-bottom: 12px;
+        margin-bottom: 28px;
         text-align: center;
     }
 }
@@ -758,6 +758,12 @@ h2 {
     align-self: flex-end;
 }
 
+@media screen and (max-width: 805px) {
+    .our__blog h2 {
+        margin-bottom: 40px;
+    }
+}
+
 
 /* ======================= FOOTER */
 
@@ -889,7 +895,7 @@ hr {
 }
 
 @media screen and (max-width: 701px) {
-    .footer-article section{
+    .footer-article section {
         justify-content: center;
         align-items: center;
     }
