@@ -239,7 +239,8 @@
         align-items: center;
     }
 
-    .main__content p, h1 {
+    .main__content p,
+    h1 {
         text-align: center;
     }
 
@@ -290,13 +291,15 @@
 }
 
 .bests_services section:first-of-type h2 {
-    font-size: 48px;
+    font-size: clamp(1.75rem, 3vw, 5.25rem);
 }
 
 .bests_services section:first-of-type p {
-    font-size: 18px;
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
     font-weight: 400;
     color: var(--gray);
+    max-width: 440px;
+    width: 100%;
 }
 
 .bests_services section:not(:first-child) {
@@ -329,6 +332,23 @@
     font-size: 17px;
     font-weight: 400;
     color: var(--gray);
+}
+
+@media screen and (max-width: 793px) {
+    .bests_services {
+        text-align: center;
+    }
+
+    .bests_services section:first-of-type h2 {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 823px) {
+
+    .bests_services section:not(:first-child) {
+        gap: 60px;
+    }
 }
 
 /* ======================= ABOUT US */
