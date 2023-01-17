@@ -22,9 +22,16 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: var(--navy);
     padding: 32px;
     color: var(--white);
+}
+
+.header img {
+    max-width: 220px;
+    width: 95%;
+    z-index: 1;
 }
 
 .menu {
@@ -61,7 +68,7 @@
 }
 
 .menu a span {
-    color: var(--orange);
+    color: var(--dark-orange);
 }
 
 .header div {
@@ -90,6 +97,33 @@
     transition: .5s ease-in-out;
 }
 
+/* ======================= MENU MOBILE */
+
+.btn__mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .btn__mobile {
+        display: block;
+    }
+
+    .menu__nav {
+        display: none;
+    }
+
+    .menu.active .menu__nav {
+        display: flex;
+        position: fixed;
+        margin-top: 200px;
+        background-color: green;
+        width: 100vw;
+        z-index: 20;
+
+    }
+}
+
 /* BODY */
 
 /* ======================= MAIN ARTICLE */
@@ -102,6 +136,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
     padding: 80px 32px;
     color: var(--white);
     background-color: var(--navy);
@@ -109,7 +144,7 @@
 
 .main__container img {
     max-width: 600px;
-    width: 95%;
+    width: 100%;
     z-index: 2;
 }
 
@@ -174,13 +209,25 @@
 .square {
     position: absolute;
     max-width: 550px;
-    width: 95%;
+    width: 85%;
     height: 560px;
     background-color: var(--orange);
     top: 0;
     right: 0;
-    z-index: 1;
 }
+
+@media screen and (max-width: 590px) {
+    .square {
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .square {
+        top: 120px;
+    }
+}
+
 
 /* ======================= PARTNERS */
 
@@ -417,6 +464,11 @@
     gap: 12px;
 }
 
+.services__img {
+    max-width: 600px;
+    width: 95%;
+}
+
 .services__section__div {
     display: flex;
     align-items: center;
@@ -567,6 +619,8 @@ h2 {
 }
 
 .our__blog section div {
+    display: flex;
+    flex-direction: column;
     width: 385px;
     padding: 16px;
     box-shadow: 0px 0px 28px -14px rgba(0, 0, 0, 0.75);
@@ -606,7 +660,7 @@ h2 {
     background-color: var(--orange);
     border: none;
     cursor: pointer;
-    margin-left: 50%;
+    align-self: flex-end;
 }
 
 .our__blog section div button:hover {
@@ -632,6 +686,11 @@ body::-webkit-scrollbar-thumb {
 .footer {
     background-color: var(--navy);
     padding: 80px 0 30px 0;
+}
+
+.footer-article img {
+    max-width: 220px;
+    width: 95%;
 }
 
 .footer-article {
