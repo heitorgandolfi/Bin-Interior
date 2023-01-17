@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb {
 
 .header img {
     max-width: 220px;
-    width: 95%;
+    width: 75%;
     z-index: 1;
 }
 
@@ -547,7 +547,7 @@ body::-webkit-scrollbar-thumb {
 
 .services__img {
     max-width: 600px;
-    width: 95%;
+    width: 100%;
 }
 
 .services__section__div {
@@ -558,7 +558,8 @@ body::-webkit-scrollbar-thumb {
 
 .services__section__div__container div {
     max-width: 300px;
-    margin: 32px 0;
+    width: 95%;
+    margin: 32px 0px;
 }
 
 .services__section__div__container div h3 {
@@ -812,6 +813,11 @@ h2 {
     background-color: var(--orange);
     padding: 16px 32px;
     cursor: pointer;
+}
+
+.footer-article form button:hover {
+    background-color: var(--dark-orange);
+    transition: .5s ease-in-out;
 }
 
 .footer-article section {
