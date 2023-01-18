@@ -7,7 +7,13 @@ const closeBtn = document.querySelector(".close__menu");
 
 // Eventos
 
-links.map((link) => link.addEventListener("click", prevDefault));
+links.map((link, i) => link.addEventListener("click", (e) => {
+    if (i === 5 || i === 6 || i === 7) {
+        return true
+    } else {
+        prevDefault(e)
+    }
+}));
 
 testimonialDiv.map((div, index) =>
     div.addEventListener("click", () => {
