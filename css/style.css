@@ -522,17 +522,17 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* gap: 120px; */
+    margin-bottom: 48px;
 }
 
 .projects nav h2 {
     font-size: clamp(1.75rem, 3vw, 5.25rem);
-    margin-bottom: 48px;
 }
 
 .projects nav ul {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
 }
@@ -575,6 +575,12 @@ body::-webkit-scrollbar-thumb {
     height: 335px;
 }
 
+@media screen and (max-width: 420px) {
+    .projects nav {
+        margin-bottom: 12px;
+    }
+}
+
 @media screen and (max-width: 587px) {
     .projects {
         padding: 0px 20px;
@@ -584,6 +590,12 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         max-height: 230px;
         align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .projects nav ul {
+        margin-top: 24px;
     }
 }
 
