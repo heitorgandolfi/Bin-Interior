@@ -565,7 +565,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 4px;
+    gap: 12px;
     max-width: 1265px;
     margin: 0 auto;
 }
