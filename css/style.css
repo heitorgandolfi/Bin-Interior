@@ -37,7 +37,7 @@
 }
 
 body::-webkit-scrollbar {
-    width: 16px;
+    width: 1rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -46,7 +46,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: var(--navy);
-    border: 1px solid var(--ice);
+    border: 0.0625rem solid var(--ice);
 }
 
 /* ======================= HEADER */
@@ -57,12 +57,12 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: var(--navy);
-    padding: 32px;
+    padding: 2rem;
     color: var(--white);
 }
 
 .header img {
-    max-width: 220px;
+    max-width: 13.75rem;
     width: 75%;
     z-index: 1;
 }
@@ -71,13 +71,13 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 20px;
+    gap: 1.25rem;
     z-index: 5;
 }
 
 .menu a {
     font-weight: 300;
-    padding: 0 16px;
+    padding: 0 1rem;
     text-decoration: none;
     color: var(--white);
     cursor: pointer;
@@ -87,7 +87,7 @@ body::-webkit-scrollbar-thumb {
 .menu a::after {
     content: " ";
     width: 0%;
-    height: 2px;
+    height: 0.125rem;
     background-color: var(--orange);
     position: absolute;
     bottom: 0;
@@ -108,7 +108,7 @@ body::-webkit-scrollbar-thumb {
     color: var(--orange);
     background-color: var(--navy);
     border: none;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .header div {
@@ -116,9 +116,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header div button {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
-    padding: 20px 36px;
+    padding: 1.25rem 2.25rem;
     color: var(--white);
     background-color: transparent;
     border: none;
@@ -154,7 +154,7 @@ body::-webkit-scrollbar-thumb {
 .close__menu i {
     font-size: 1.25rem;
     color: var(--black);
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -174,12 +174,12 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         position: fixed;
         background-image: linear-gradient(-225deg, #fdf1e3 0%, #e6ecff 100%);
-        box-shadow: 0px 0px 8px -4px var(--preto-social-medias);
+        box-shadow: 0rem 0rem 0.5rem -0.25rem var(--preto-social-medias);
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         height: 100%;
-        max-width: 320px;
+        max-width: 20rem;
         width: 100%;
         right: 0;
         top: 0;
@@ -198,7 +198,7 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         color: var(--black);
         font-weight: 800;
-        margin-bottom: 12px;
+        margin-bottom: 0.75rem;
     }
 
     .menu.active .menu__nav button:first-of-type {
@@ -223,41 +223,41 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
-    padding: 80px 32px;
+    padding: 5rem 2rem;
     color: var(--white);
     background-color: var(--navy);
 }
 
 .main__container img {
-    max-width: 600px;
+    max-width: 37.5rem;
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     z-index: 2;
 }
 
 .main__content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875rem;
     z-index: 2;
 }
 
 .main__content h1 {
-    font-size: clamp(40px, 4.5vw, 78px);
+    font-size: clamp(2.5rem, 4.5vw, 4.875rem);
 }
 
 .main__content p {
-    max-width: 400px;
+    max-width: 25rem;
     width: 95%;
     font-weight: 400;
     color: var(--light-gray);
 }
 
 .main__content button {
-    max-width: 170px;
+    max-width: 10.625rem;
     width: 100%;
-    height: 59px;
-    font-size: 16px;
+    height: 3.6875rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--white);
     background-color: var(--orange);
@@ -275,24 +275,24 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 32px;
-    margin-top: 48px;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .main__content section div h3 {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--orange);
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .main__content section div i {
     color: var(--white);
-    margin-right: 12px;
+    margin-right: 0.75rem;
 }
 
 .main__content section div h4 {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     color: var(--light-gray);
     margin-left: 2.375rem;
@@ -300,9 +300,9 @@ body::-webkit-scrollbar-thumb {
 
 .square {
     position: absolute;
-    max-width: 550px;
+    max-width: 34.375rem;
     width: 85%;
-    height: 560px;
+    height: 35rem;
     background-color: var(--orange);
     top: 0;
     right: 0;
@@ -316,7 +316,7 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 1000px) {
     .square {
-        top: 120px;
+        top: 7.5rem;
     }
 }
 
@@ -335,18 +335,18 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 120px;
-    padding: 120px 32px;
+    gap: 7.5rem;
+    padding: 7.5rem 2rem;
 }
 
 .partners img {
-    max-width: 200px;
+    max-width: 12.5rem;
     width: 95%;
 }
 
 @media screen and (max-width: 583px) {
     .partners {
-        padding: 40px 32px;
+        padding: 2.5rem 2rem;
     }
 }
 
@@ -354,27 +354,23 @@ body::-webkit-scrollbar-thumb {
 
 .bests_services {
     background-color: var(--ice);
-    padding: 80px 32px;
+    padding: 5rem 2rem;
 }
-
-/* .bests_services_container:not(:last-child) {
-    border-right: 3px solid var(--orange);
-} */
 
 .bests_services section:first-of-type {
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 88px;
-    padding-left: 4px;
-    margin-left: 4px;
+    margin-bottom: 5.5rem;
+    padding-left: 0.25rem;
+    margin-left: 0.25rem;
 }
 
 .bests_services section:first-of-type h3 {
     text-transform: uppercase;
     color: var(--orange);
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
 }
 
 .bests_services section:first-of-type h2 {
@@ -386,7 +382,7 @@ body::-webkit-scrollbar-thumb {
     font-size: clamp(1rem, 1.5vw, 1.125rem);
     font-weight: 400;
     color: var(--gray);
-    max-width: 440px;
+    max-width: 27.5rem;
     width: 100%;
 }
 
@@ -395,29 +391,29 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 120px;
+    gap: 7.5rem;
 }
 
 .bests_services_container {
-    max-width: 320px;
-    padding: 16px;
+    max-width: 20rem;
+    padding: 1rem;
     width: 95%;
     display: flex;
 }
 
 .bests_services_container i {
-    font-size: 32px;
-    margin-right: 12px;
+    font-size: 2rem;
+    margin-right: 0.75rem;
     color: var(--orange);
 }
 
 .bests_services_container div h3 {
-    font-size: 24px;
-    margin-bottom: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .bests_services_container div p {
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 400;
     color: var(--gray);
 }
@@ -428,18 +424,18 @@ body::-webkit-scrollbar-thumb {
     }
 
     .bests_services section:first-of-type {
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 
     .bests_services section:first-of-type h2 {
-        margin-bottom: 28px;
+        margin-bottom: 1.75rem;
         text-align: center;
     }
 }
 
 @media screen and (max-width: 823px) {
     .bests_services section:not(:first-child) {
-        gap: 40px;
+        gap: 2.5rem;
     }
 }
 
@@ -450,24 +446,24 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 80px 0px;
+    padding: 5rem 0px;
 }
 
 .about__us img {
-    max-width: 610px;
+    max-width: 38.125rem;
     width: 95%;
-    margin: 0 40px 0 0;
+    margin: 0 2.5rem 0 0;
 }
 
 .about__us div h3 {
     text-transform: uppercase;
     color: var(--orange);
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
 }
 
 .about__us div h2 {
     font-size: clamp(1.75rem, 3vw, 5.25rem);
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
     text-align: start;
 }
 
@@ -476,14 +472,14 @@ body::-webkit-scrollbar-thumb {
     font-size: clamp(1rem, 1.5vw, 1.125rem);
     font-weight: 400;
     color: var(--gray);
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
 }
 
 .about__us div button {
-    max-width: 170px;
+    max-width: 10.625rem;
     width: 100%;
-    height: 59px;
-    font-size: 16px;
+    height: 3.6875rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--white);
     background-color: var(--orange);
@@ -508,14 +504,14 @@ body::-webkit-scrollbar-thumb {
     }
 
     .about__us img {
-        margin: 0 20px 0 20px;
+        margin: 0 1.25rem 0 1.25rem;
     }
 }
 
 /* ======================= PROJECTS */
 
 .projects {
-    padding: 0px 80px;
+    padding: 0rem 5rem;
 }
 
 .projects nav {
@@ -523,7 +519,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .projects nav h2 {
@@ -535,11 +531,11 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .projects nav ul li {
-    font-size: clamp(1rem, 2vw, 20px);
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 600;
     list-style: none;
     text-transform: uppercase;
@@ -550,7 +546,7 @@ body::-webkit-scrollbar-thumb {
 .projects nav ul li::after {
     content: " ";
     width: 0%;
-    height: 2px;
+    height: 0.125rem;
     background-color: var(--orange);
     position: absolute;
     bottom: 0;
@@ -566,44 +562,44 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
-    max-width: 1265px;
+    gap: 0.75rem;
+    max-width: 79.0625rem;
     margin: 0 auto;
 }
 
 .projects__div img {
-    max-width: 650px;
-    height: 335px;
+    max-width: 40.625rem;
+    height: 20.9375rem;
 }
 
 @media screen and (max-width: 420px) {
     .projects nav {
-        margin-bottom: 12px;
+        margin-bottom: 0.75rem;
     }
 }
 
 @media screen and (max-width: 587px) {
     .projects {
-        padding: 0px 20px;
+        padding: 0rem 1.25rem;
     }
 
     .projects__div img {
         width: 100%;
-        max-height: 230px;
+        max-height: 14.375rem;
         align-self: flex-start;
     }
 }
 
 @media screen and (max-width: 778px) {
     .projects nav ul {
-        margin-top: 24px;
+        margin-top: 1.5rem;
     }
 }
 
 /* ======================= SERVICES */
 
 .services {
-    padding: 80px 0px;
+    padding: 5rem 0rem;
 }
 
 .services__div {
@@ -613,21 +609,21 @@ body::-webkit-scrollbar-thumb {
 .services__div h3 {
     text-transform: uppercase;
     color: var(--orange);
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
 }
 
 .services__div h2 {
     font-size: clamp(1.75rem, 3vw, 5.25rem);
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
 }
 
 .services__div p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     color: var(--gray);
     margin: 0 auto;
-    margin-bottom: 36px;
-    max-width: 700px;
+    margin-bottom: 2.25rem;
+    max-width: 43.75rem;
     width: 95%;
     font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
@@ -637,11 +633,11 @@ body::-webkit-scrollbar-thumb {
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 0.75rem;
 }
 
 .services__img {
-    max-width: 600px;
+    max-width: 37.5rem;
     width: 100%;
 }
 
@@ -652,28 +648,28 @@ body::-webkit-scrollbar-thumb {
 }
 
 .services__section__div__container div {
-    max-width: 300px;
+    max-width: 18.75rem;
     width: 95%;
-    margin: 32px 0px;
+    margin: 2rem 0rem;
 }
 
 .services__section__div__container div h3 {
-    font-size: 20px;
-    margin: 20px 0;
+    font-size: 1.25rem;
+    margin: 1.25rem 0;
 }
 
 .services__section__div__container div p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     color: var(--gray);
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
 }
 
 .services__section__div__container div button {
-    max-width: 200px;
+    max-width: 12.5rem;
     width: 100%;
-    height: 70px;
-    font-size: 16px;
+    height: 4.375rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--white);
     background-color: var(--navy);
@@ -703,21 +699,21 @@ body::-webkit-scrollbar-thumb {
 .testimonial {
     background-color: var(--navy);
     color: var(--white);
-    padding: 80px 0px;
+    padding: 5rem 0rem;
     text-align: center;
 }
 
 .testimonial h3 {
     text-transform: uppercase;
     color: var(--orange);
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
 }
 
 .testimonial p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
-    margin-bottom: 36px;
-    max-width: 700px;
+    margin-bottom: 2.25rem;
+    max-width: 43.75rem;
     width: 95%;
     margin: 0 auto;
     font-size: clamp(1rem, 1.5vw, 1.125rem);
@@ -728,13 +724,13 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 120px;
-    margin-top: 60px;
+    gap: 7.5rem;
+    margin-top: 3.75rem;
 }
 
 .testimonial section div {
     opacity: .6;
-    padding: 32px;
+    padding: 2rem;
     cursor: pointer;
 }
 
@@ -743,35 +739,35 @@ body::-webkit-scrollbar-thumb {
 }
 
 .testimonial__img {
-    max-width: 180px;
+    max-width: 11.25rem;
     border-radius: 50%;
-    border: 4px solid var(--white);
-    margin-bottom: 20px;
+    border: 0.25rem solid var(--white);
+    margin-bottom: 1.25rem;
     cursor: pointer;
 }
 
 .testimonial section div h4 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .testimonial section div h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .testimonial button {
-    max-width: 330px;
+    max-width: 20.625rem;
     width: 95%;
-    height: 70px;
-    font-size: 16px;
+    height: 4.375rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--white);
     background-color: var(--orange);
     border: none;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .testimonial button:hover {
@@ -794,7 +790,7 @@ body::-webkit-scrollbar-thumb {
 /* ======================= OUR BLOG */
 
 .our__blog {
-    padding: 80px 0px;
+    padding: 5rem 0rem;
 }
 
 .our__blog h3:first-child,
@@ -805,12 +801,12 @@ h2 {
 .our__blog h3:first-child {
     text-transform: uppercase;
     color: var(--orange);
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
 }
 
 .our__blog h2 {
     font-size: clamp(1.75rem, 3vw, 5.25rem);
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
 .our__blog section {
@@ -818,47 +814,47 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 36px;
+    gap: 2.25rem;
 }
 
 .our__blog section div {
     display: flex;
     flex-direction: column;
-    max-width: 385px;
+    max-width: 24.0625rem;
     width: 95%;
-    padding: 16px;
-    box-shadow: 0px 0px 28px -14px rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    box-shadow: 0rem 0rem 1.75rem -0.875rem rgba(0, 0, 0, 0.75);
     background-color: var(--white);
 }
 
 .our__blog section div img {
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .our__blog section div h5 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     color: var(--orange);
 }
 
 .our__blog section div h3 {
-    font-size: 24px;
-    margin-bottom: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .our__blog section div p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--gray);
-    margin-bottom: 44px;
+    margin-bottom: 2.75rem;
 }
 
 .our__blog section div button {
-    max-width: 180px;
+    max-width: 11.25rem;
     width: 95%;
-    height: 70px;
-    font-size: 16px;
+    height: 4.375rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--white);
     background-color: var(--orange);
@@ -869,7 +865,7 @@ h2 {
 
 @media screen and (max-width: 805px) {
     .our__blog h2 {
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 }
 
@@ -878,11 +874,11 @@ h2 {
 
 .footer {
     background-color: var(--navy);
-    padding: 80px 0 30px 0;
+    padding: 5rem 0 1.875rem 0;
 }
 
 .footer-article img {
-    max-width: 220px;
+    max-width: 13.75rem;
     width: 95%;
 }
 
@@ -891,21 +887,21 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 120px;
+    gap: 7.5rem;
 }
 
 .footer-article form p {
     font-size: clamp(1rem, 1.5vw, 1.125rem);
-    max-width: 300px;
+    max-width: 18.75rem;
     color: var(--ice);
     font-weight: 300;
-    margin: 18px 0 40px 0;
+    margin: 1.125rem 0 2.5rem 0;
 }
 
 .footer-article form input[type=email] {
-    font-size: 18px;
-    padding: 16px 32px;
-    width: 200px;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    width: 12.5rem;
     border: none;
 }
 
@@ -915,11 +911,11 @@ h2 {
 }
 
 .footer-article form button {
-    font-size: 18px;
+    font-size: 1.125rem;
     border: none;
     color: var(--white);
     background-color: var(--orange);
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     cursor: pointer;
 }
 
@@ -934,7 +930,7 @@ h2 {
 }
 
 .footer-article section div {
-    padding: 32px;
+    padding: 2rem;
 }
 
 .footer-article section div:not(:last-child) {
@@ -946,16 +942,16 @@ h2 {
 
 .footer-article section div h3 {
     color: var(--white);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
 }
 
 .footer-article section div a {
     text-decoration: none;
     font-weight: 300;
     color: var(--white);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .footer-article section div a:hover {
@@ -964,9 +960,9 @@ h2 {
 
 .footer-article section div i {
     color: var(--white);
-    font-size: 24px;
-    margin-right: 32px;
-    margin-bottom: 12px;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-bottom: 0.75rem;
     cursor: pointer;
 }
 
@@ -983,7 +979,7 @@ h2 {
 
 hr {
     width: 61%;
-    margin: 80px 0 32px 0;
+    margin: 5rem 0 2rem 0;
 
 }
 
@@ -995,7 +991,7 @@ hr {
 @media screen and (max-width: 1165px) {
 
     .footer-article {
-        gap: 40px;
+        gap: 2.5rem;
     }
 
     .footer-article form {
@@ -1003,8 +999,8 @@ hr {
     }
 
     .footer-article form p {
-        margin: 18px 40px 0;
-        margin-bottom: 20px;
+        margin: 1.125rem 2.5rem 0;
+        margin-bottom: 1.25rem;
     }
 }
 
