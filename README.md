@@ -1,4 +1,4 @@
-# Numeral Landing Page
+# Bin Interior Landing Page
 
 <div align="center">
 
