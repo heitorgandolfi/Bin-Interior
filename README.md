@@ -46,5 +46,5 @@ Linkedin: www.linkedin.com/in/heitorgandolfi.
 
 - The MIT License (**MIT**).
 
-Copyright ©️ 2022.
+Copyright ©️ 2023.
 
