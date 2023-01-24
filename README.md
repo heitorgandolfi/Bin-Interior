@@ -1,6 +1,6 @@
 # Bin Interior Landing Page
 
-<img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=green&style=for-the-badge"/> <img src="http://img.shields.io/static/v1?label=release%20date&message=JANUARY%202023&color=YELLOW&style=for-the-badge"/> <img src="http://img.shields.io/static/v1?label=license&message=MIT&color=informational&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=success&style=for-the-badge"/> <img src="http://img.shields.io/static/v1?label=release%20date&message=JANUARY%202023&color=green&style=for-the-badge"/> <img src="http://img.shields.io/static/v1?label=license&message=MIT&color=informational&style=for-the-badge"/>
 
 <div align="center">
 
